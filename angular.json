@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "sushi": {
+    "sushi-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/sushi",
+            "outputPath": "dist/sushi-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -21,7 +21,7 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/assets/img/logo_sushi.png",
+              "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
@@ -52,7 +52,13 @@
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.development.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -61,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "sushi:build:production"
+              "browserTarget": "sushi-app:build:production"
             },
             "development": {
-              "browserTarget": "sushi:build:development"
+              "browserTarget": "sushi-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "sushi:build"
+            "browserTarget": "sushi-app:build"
           }
         },
         "test": {
@@ -97,6 +103,6 @@
     }
   },
   "cli": {
-    "analytics": "675816ae-0a5a-41b0-b517-0c110a2af561"
+    "analytics": "4ac97cba-f0fb-4ebd-a6fc-b1abdb770573"
   }
 }

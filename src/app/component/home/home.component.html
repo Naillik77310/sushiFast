@@ -1,0 +1,33 @@
+<app-header></app-header>
+<section class="section">
+    <table *ngIf="sushiBoxes.length > 0; else sushiEmpty" class="table is-striped center">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th></th>
+                <th>Prix</th>
+                <th></th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let sushi of sushiBoxes">
+                <td>{{ sushi.nom }}</td>
+                <td>                  
+                    <img src="{{pathImage}}{{sushi.image}}">
+
+                </td> 
+                <td>{{sushi.prix}}€</td> 
+                <td><img src="../../../assets/img/icons8-panier-1000.png" style="height: 50px;"></td>          
+            </tr>        
+        </tbody>
+        <tfoot>
+            <div style="font-weight:bold;">Nombre de boxes : {{ sushiBoxes.length }}</div>
+        </tfoot>
+    </table>
+    
+    <ng-template #sushiEmpty>
+        <p>Pas de sushi boxes ! </p>
+    </ng-template>
+    
+    </section>
