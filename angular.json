@@ -21,7 +21,7 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
+              "src/assets/img/logo_sushi.png",
               "src/assets"
             ],
             "styles": [
