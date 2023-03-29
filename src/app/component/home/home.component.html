@@ -14,7 +14,7 @@
             <tr *ngFor="let sushi of sushiBoxes">
                 <td>{{ sushi.nom }}</td>
                 <td> 
-                    <a href="/details/{{sushi.id}}"><img src="{{pathImage}}{{sushi.image}}"></a>                 
+                    <a href="/details?id={{sushi.id}}"><img src="{{pathImage}}{{sushi.image}}"></a>                 
 
                 </td> 
                 <td>{{sushi.prix}}€</td> 
