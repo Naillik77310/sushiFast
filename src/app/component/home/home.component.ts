@@ -21,6 +21,7 @@ export class HomeComponent implements OnInit {
       {
       next:(boxes: IBox[]) => {
         this.sushiBoxes = boxes
+        console.log(this.sushiBoxes)
       }, 
       error:er => console.log(er)
     })

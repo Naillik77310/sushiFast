@@ -15,4 +15,7 @@ export class ManagerSushiBoxService {
     return this.http.get(environment.apiSushi)  
   }
 
+  public getBoxesById(id:number) : Observable<any>{
+    return this.http.get(environment.apiSushi+"/"+id)
+  }
 }
