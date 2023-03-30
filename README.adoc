@@ -105,4 +105,33 @@ image::src/assets/img/datails.png[]
     }
 ]
 ```
----
+
+== 5. Evil User Story
+
+=== 5.1 Evil User Story 1 et contre-mesure 1
+
+En tant que personne malveillante, je veux empêcher l'API de fonctionner en réalisant une attaque par déni de service (DoS et DDoS ) pour ralentir ou arrêter le service pour les autres clients afin de nuire à l'image de marque.
+
+En tant que développeur je bloque ou abandonne les requêtes supplémentaires  afin d'empêcher l'API d'être submergé si plusieurs demandes arrive de plusieurs sources différentes (adresse ip) dans un court laps de temps.
+
+=== 5.2 Evil User Story 2 et contre-mesure 2
+
+En tant que personne malveillante, j'ai découvert que SushiFast utilise AngularJS qui n'est plus pris en charge par Google depuis 2022. Je vais donc me documenter sur les failles d'AngularJS, en vue de les exploiter
+
+En tant que développeur je surveille les mises à jour d'Angular, particulièrement en terme de sécurité (site https://angular.io/), ainsi que les autres composants tiers utilisés par mon projet. Exemple de commandes.
+```
+ng update @angular/cli @angular/core
+```
+
+Pour faire la mise à jour vers la version stable actuel
+```
+ng update @angular/cli@^<major_version> @angular/core@^<major_version>
+```
+
+Pour basculer d'une version majeur à une autre.
+```
+ng update @angular/cli@^10 @angular/core@^10
+```
+
+Permet de prendre la dernière version de 10.xx et l'utiliser pour la mise à jour.
+
