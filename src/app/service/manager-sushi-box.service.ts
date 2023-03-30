@@ -18,4 +18,15 @@ export class ManagerSushiBoxService {
   public getBoxesById(id:number) : Observable<any>{
     return this.http.get(environment.apiSushi+"/"+id)
   }
+    getPanierList(): [] {
+    return JSON.parse(localStorage.getItem('PanieList') || '[]');
+  }
+
+  //setBoxInLS(): Ibox[] {
+    //let PanierList = this.getPanierList
+    //PanierList = JSON.parse(localStorage.getItem('PanierList'))
+    //PanierList.push(box)
+    //localStorage.setItem('PanierList', JSON.stringify(PanierList))
+    //this.refreshPanierListEvent.emit(PanierList)
+  //}
 }

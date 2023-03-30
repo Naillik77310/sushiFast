@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   pathImage: string = "http://localhost:8080/api/image/"
 
   constructor(private managerSushiBoxservice: ManagerSushiBoxService) {
-
+    //this.managerSushiBoxservice.setBoxInLS()
   }
 
   ngOnInit(): void {
