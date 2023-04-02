@@ -131,7 +131,22 @@ ng update @angular/cli@^<major_version> @angular/core@^<major_version>
 Pour basculer d'une version majeur à une autre.
 ```
 ng update @angular/cli@^10 @angular/core@^10
-``
+```
 
 Permet de prendre la dernière version de 10.xx et l'utiliser pour la mise à jour.
+
+== 6. Diagramme de séquence
+
+=== 6.1 Diagramme de séquence illustrant les échanges réalisés
+
+@startuml
+
+Client-> ApplicationAngular: connexion à l'application
+ ApplicationAngular -> Serveur: connexion au serveur
+ApplicationAngular -> API: appel à l'API
+HomeComponent -> Client: Affiche page
+
+
+
+@enduml
 
