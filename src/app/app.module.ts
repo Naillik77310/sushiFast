@@ -9,6 +9,7 @@ import { HeaderComponent } from './component/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DetailsComponent } from './component/details/details.component';
 import { PanierComponent } from './panier/panier.component';
+import { RgpdComponent } from './component/rgpd/rgpd.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PanierComponent } from './panier/panier.component';
     HomeComponent,
     HeaderComponent,
     DetailsComponent,
-    PanierComponent
+    PanierComponent,
+    RgpdComponent
   ],
   imports: [
     BrowserModule,
