@@ -146,7 +146,9 @@ Client-> ApplicationAngular: connexion à l'application
 ApplicationAngular -> API: appel à l'API
 HomeComponent -> Client: Affiche page
 
-
-
 @enduml
+
+== 7. Conclusion
+
+On peut conclure que SushiFast est un projet qui a permis de nous faire monter en compétence avec le frameworks Angular en retraçant tout ce qu'on a vu durant les différents tp précédent dans un projet de commande de Sushi utilisant une API.
 
