@@ -138,7 +138,9 @@ Permet de prendre la dernière version de 10.xx et l'utiliser pour la mise à jo
 == 6. Diagramme de séquence
 
 === 6.1 Diagramme de séquence illustrant les échanges réalisés
-
+<<<
+[plantuml]
+----
 @startuml
 
 Client-> ApplicationAngular: connexion à l'application
@@ -147,7 +149,7 @@ ApplicationAngular -> API: appel à l'API
 HomeComponent -> Client: Affiche page
 
 @enduml
-
+----
 == 7. Conclusion
 
 On peut conclure que SushiFast est un projet qui a permis de nous faire monter en compétence avec le frameworks Angular en retraçant tout ce qu'on a vu durant les différents tp précédent dans un projet de commande de Sushi utilisant une API.
