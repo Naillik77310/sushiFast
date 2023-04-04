@@ -1,4 +1,4 @@
 export const environment = {
-    apiSushi:'http://quizbe.org/api/boxes',
-    pathImage: ''
+    apiSushi:'https://quizbe.org/api/boxes',
+    pathImage: 'https://quizbe.org/api/boxes'
 };

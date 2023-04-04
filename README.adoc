@@ -19,6 +19,9 @@ https://ldv-melun.github.io/sio-slam/sio-component/_attachments/SP2-Sushi-Angula
 Voici le lien de notre dépot github :
 https://github.com/Naillik77310/Sushi
 
+Voici le lien de la mise en production du site web sushiFast:
+https://sushifast-26585.web.app/
+
 == 1. Contexte:
 Cette situation professionnelle repose sur le développement d’une application Front-end avec le framework Angular pour une prise de commande au niveau d’un point de vente de sushis (restauration)
 Deux scénarios peuvent coexister : l’opérateur prend la commande par téléphone pour une livraison à domicile ou le client utilise une borne de commande. On comprend bien pourquoi, étant une application interne, il n’existe pas d’authentification pour l’instant.
