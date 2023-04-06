@@ -4,7 +4,7 @@
         <thead>
             <tr>
                 <th class="tableau">Nom</th>
-                <th></th>
+                <th>Détails</th>
                 <th>Prix</th>
                 <th>Ajout</th>
 
@@ -14,7 +14,7 @@
             <tr *ngFor="let sushi of sushiBoxes">
                 <td class="tableau">{{ sushi.nom }}</td>
                 <td> 
-                    <a href="/details?id={{sushi.id}}"><img src="{{pathImage}}{{sushi.image}}"></a>                 
+                    <a href="/details?id={{sushi.id}}"><img src="https://famous-parts-yell-92-184-117-118.loca.lt/api/image/{{sushi.image}}"></a>                 
 
                 </td> 
                 <td>{{sushi.prix}}€</td> 

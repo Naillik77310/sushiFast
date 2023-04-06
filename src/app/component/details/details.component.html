@@ -1,10 +1,32 @@
 <app-header></app-header>
-<section class="section">
-    <h1 class="title">Détails de notre box</h1>
-    <h3 class="title">Voice le {{detailBox.nom}}</h3>
-    <h3 class="title">Une Box pour seulement {{detailBox.prix}}€</h3>
-    <h3 class="title">Comprenant différente saveurs tels que {{detailBox.saveurs}}</h3>
-    <h3 class="title">Avec comme aliment {{detailBox.aliments[0].nom}}</h3>
-    <h3 class="title">Et une image à vous faire saliver d'envie</h3>
-    <img src="{{pathImage}}{{detailBox.image}}">
+<section class="about section-padding" id="about">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6 col-md-6 col-12">
+                <h3 class="mb-4">Détails de la box</h3>
+                <p>Information concernant la box</p>
+                <p></p>
+                <ul>
+                    <li>
+                        Voici le {{detailBox.nom}}
+                    </li>
+                    <li>
+                        Une Box pour seulement {{detailBox.prix}}€
+                    </li>
+                    <li>
+                        Comprenant différente saveurs tels que {{detailBox.saveurs}}
+                    </li>
+                    <li>
+                        Avec comme aliment {{detailBox.aliments[0].nom}}
+                    </li>
+                </ul>
+                <p><br></p>
+                <a type="button" class="btn btn-success mb-2">Ajouter</a>
+            </div>
+            <div class="col-lg-5 mx-auto col-md-6 col-12">
+                <img src="https://famous-parts-yell-92-184-117-118.loca.lt/api/image/{{detailBox.image}}" class="img-fluid" alt="Sushi" style="width: 1000%;">
+            </div>
+        </div>
+    </div>
 </section>
