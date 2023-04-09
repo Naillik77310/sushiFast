@@ -1,10 +1,10 @@
 
 export interface IBox {
-    id?: number
+    id: number
     pieces?: number
     nom?: string
     image?: string
-    prix?: number
+    prix: number
     saveurs?: string[]
     aliments?: [
         {

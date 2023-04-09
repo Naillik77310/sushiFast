@@ -1,0 +1,21 @@
+<div class="popup-background">
+    <h2 mat-dialog-title class="fw-normal mb-2">Valider la commande</h2>
+    <mat-dialog-content class="fw-normal">Voulez-vous valider la commande ?</mat-dialog-content>
+    <mat-dialog-actions>
+      <button
+        type="button"
+        class="btn bg-amazon custom-btn"
+        [mat-dialog-close]="true"
+      >
+        Oui
+      </button>
+      <div class="me-1"></div>
+      <button
+      type="button"
+      class="btn bg-amazon custom-btn"
+      [mat-dialog-close]="false"
+      >
+        Non
+      </button>
+    </mat-dialog-actions>
+  </div>
