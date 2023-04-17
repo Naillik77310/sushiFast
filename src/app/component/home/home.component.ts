@@ -40,6 +40,7 @@ export class HomeComponent implements OnInit {
       // Vérifie si au moins 2 secondes se sont écoulées depuis le dernier ajout
       console.log('ajout panier');
       this.managerSushiBoxservice.addToPanier(box);
+      console.log(this.managerSushiBoxservice.panier)
       this.lastAddToCartTime = currentTime;
     }
   }

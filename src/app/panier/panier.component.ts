@@ -16,7 +16,7 @@ export class PanierComponent implements OnInit {
   panier: IBox[] = [];
   uniqueCart: IBox[] = [];
   total: number = 0;
-  imageLink: string = environment.apiSushi;
+  imageLink: string = environment.pathImage;
 
   constructor(
     private boxService: ManagerSushiBoxService,
@@ -47,7 +47,7 @@ export class PanierComponent implements OnInit {
 
   // Initialise le composant, récupère le panier et calcule le total
   ngOnInit() {
-    this.panier = this.boxService.getPanier(); // Récupère le panier du service
+    this.panier = this.boxService.panier; // Récupère le panier du service
     this.uniqueCart = this.getRegroupedBox(); // Regroupe les éléments du panier
     this.calculateTotal(); // Calcule le total du panier
   }
@@ -108,7 +108,7 @@ export class PanierComponent implements OnInit {
 
   // Sauvegarde le panier dans le localStorage
   savePanierToLocalStorage() {
-    this.boxService.cleanCountPanier()
+    //this.boxService.cleanCountPanier()
     // Récupérer les commandes existantes du localStorage
     let orders = JSON.parse(localStorage.getItem('orders') || '[]');
 
